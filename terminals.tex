@@ -1,0 +1,32 @@
+\section*{Terminals}
+\entry{25mm}{\cmdkey-t}{new term}\\
+\entry{30mm}{term}{Gnome term}\\
+\entry{30mm}{\href{https://github.com/alacritty/alacritty}{alacritty}}{rust-term}\\
+%\entry{30mm}{}{}\\
+\entry{30mm}{tmux}{term multiplexer}\\
+\entry{30mm}{}{}\\
+
+\subsection*{\href{https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/}{tmux} CLI}
+\entry{30mm}{tmux -s <name>}{new session}\\
+\entry{30mm}{tmux ls}{all sessions}\\
+\entry{30mm}{tmux attach -t <name>}{reconnect}\\
+\entry{30mm}{tmux rename-session -t \dots}{rename}\\
+\entry{30mm}{tmux list-windows}{}\\
+
+\subsection*{\href{https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/}{tmux} key bindings}
+\textit{Configurable \codein{<pre>}fix key is \codein{<ctl>-t} (\codein{<ctl>-b} by default):}\\
+\entry{34mm}{<pre>\% <pre>\textquotedbl}{split horiz/vert}\\
+\entry{34mm}{<pre>| <pre>-}{ibid, custom}\\
+\entry{34mm}{<pre><$\leftarrow$> <pre><$\rightarrow$}{move $\to$ pane}\\
+\entry{34mm}{<pre>p <pre>n}{\ul{p}rev/\ul{n}ext wind}\\
+\entry{34mm}{<pre><name>}{move $\to$ wind}\\
+\entry{34mm}{<pre>d}{\ul{d}etach}\\
+\entry{34mm}{<pre>?}{help}\\
+\entry{34mm}{<pre>!}{pane $\to$ new wind}\\
+\entry{34mm}{<pre>z}{toggle fullscreen}\\
+\entry{34mm}{<pre> <ctl><$\leftarrow\rightarrow\uparrow\downarrow$>}{resize pane}\\
+\entry{34mm}{<pre> <ctl><hjkl>}{ibid, custom}\\
+\entry{34mm}{<pre>,}{rename window}\\
+
+\subsection*{\href{https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/}{tmux} config}
+\textit{See \href{https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/}{here} for basic \codein{.tmux.conf} config, and \href{https://leanpub.com/the-tao-of-tmux/read\#leanpub-auto-book-updates-and-tmux-changes}{here} for a full book.}

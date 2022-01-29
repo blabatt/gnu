@@ -105,7 +105,9 @@ by~Blair~Labatt~III,~page~\thepage~of~2
 \newenvironment{code}
     {\begin{minipage}{4cm}}
     {\end{minipage}}
-    
+ 
+\newcommand{\codein}[1]{%%%
+    {\textcolor{blue}{\fboxsep0pt\colorbox{gray!30}{\tt#1}}}}%%%   
  
 \newcommand{\entry}[3]{%%%
     \begin{minipage}{{#1}}%%
@@ -276,6 +278,12 @@ by~Blair~Labatt~III,~page~\thepage~of~2
 \input{misc.tex}
 %\input{bash}  % moved to Bash Cheatsheet
 \input{gnome}
+\input{terminals}
+
+\vfill
+\,
+%[25cm]
+
 
 \end{multicols*}
 \end{document}

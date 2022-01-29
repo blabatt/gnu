@@ -3,14 +3,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Windows \& Workspace Hotkeys}
-\entry{25mm}{\cmd\$\uparrow\$ \quad (\cmd-$\downarrow$)}{goto workspace up (dwn)}\\
-\entry{25mm}{\shiftkey-\cmd-$\uparrow$ (\shiftkey-\cmd-$\downarrow$)}{move app to WS up (down)}\\
-\entry{25mm}{\cmdkey-\ejectkey }{send window $\to$ back}\\
-\entry{25mm}{\option-\escape}{cycle WS window, immediately}\\
-\entry{25mm}{}{cycle WS window, visibly}\\
-\entry{25mm}{}{cycle APP window, immed}\\
-\entry{25mm}{}{cycle APP window, visibly}\\
-\entry{25mm}{}{toggle full screen}\\
+\entry{25mm}{\cmdkey-$\uparrow$ \quad (\cmd-$\downarrow$) }{goto workspace up (dwn)}\\
+\entry{25mm}{\shiftkey-\cmdkey-$\uparrow$ (\shiftkey-\cmdkey-$\downarrow$)}{move app to WS up (down)}\\
+%\entry{25mm}{}{cycle WS window, visibly}\\
+%\entry{25mm}{}{cycle APP window, immed}\\
+%\entry{25mm}{}{cycle APP window, visibly}\\
+%\entry{25mm}{}{toggle full screen}\\
 \entry{25mm}{\cmdkey-\returnkey}{window adjustment mode}\\
 \entry{25mm}{\cmdkey-m}{toggle window maximize}\\
 \entry{25mm}{\cmdkey-\esckey}{minimimze window}\\
@@ -19,7 +17,10 @@
 \entry{25mm}{\ctlkey-\cmdkey-$\leftarrow$}{split left}\\
 \entry{25mm}{\ctlkey-\cmdkey-$\rightarrow$}{split left}\\
 \entry{25mm}{\cmdkey-/}{launcher}\\
-\entry{25mm}{\cmdkey-\tabkey}{cycle application}\\
+\entry{25mm}{\cmdkey-`}{cycle app window}\\
+\entry{25mm}{\cmdkey-\tabkey}{cycle window}\\
+\entry{25mm}{\optkey-\tabkey}{cycle window in WS}\\
+\entry{25mm}{\optkey-\esckey}{cycle win in WS, immed}\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,19 +30,18 @@
 \entry{25mm}{\cmdkey-j}{launch \ul{j}ulia}\\
 \entry{25mm}{\cmdkey-b}{launch \ul{b}rowser}\\
 \entry{25mm}{\cmdkey-l}{\ul{l}ock screen}\\
+\entry{25mm}{\cmdkey-a}{\ul{a}pplications}\\
+\entry{25mm}{\cmdkey-d}{show \ul{d}esktop}\\
 \entry{25mm}{\cmdkey-f}{open \ul{f}olders}\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Screenshot Hotkeys}
-\entry{25mm}{}{screenshot $\to$ /Picture}\\
-\entry{25mm}{}{area screen $\to$ /Pictures}\\
-\entry{25mm}{}{screenshot $\to$ clipboard}\\
-\entry{25mm}{}{area screen $\to$ clipboard}\\
-\entry{25mm}{}{save clipboard pic to /Pictures}\\
-\entry{25mm}{}{}\\
-\entry{25mm}{}{}\\
-
+\entry{25mm}{\optkey-print}{screenshot $\to$ /Picture}\\
+\entry{25mm}{\shiftkey-print}{area screen $\to$ /Pictures}\\
+\entry{25mm}{\ctlkey-\optkey-print}{win screenshot $\to$ clip}\\
+\entry{25mm}{\shiftkey-\ctlkey-print}{area screen $\to$ clipboard}\\
+\entry{25mm}{print}{save screenshot to /Pictures}\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,13 +49,39 @@
 
 \entry{25mm}{\optkey-$\leftarrow$}{back}\\
 \entry{25mm}{\optkey-$\rightarrow$}{forward}\\
+\entry{25mm}{\ctlkey-\tabkey}{cycle tabs in browser}\\
+\entry{25mm}{\ctlkey-t}{new browser \ul{t}ab}\\
+\entry{25mm}{\ctlkey-n}{new browser wi\ul{n}dow}\\
+\entry{25mm}{\ctlkey-d}{bookmark this page}\\
+\entry{25mm}{\ctlkey-w}{close tab}\\
+\entry{25mm}{\ctlkey-\shiftkey-t}{undo close \ul{t}ab}\\
+\entry{25mm}{\ctlkey-pageup}{move to next tab}\\
+\entry{25mm}{\ctlkey-k}{focus search bar}\\
+%\entry{25mm}{}{}\\
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Browser Media Hotkeys (Firefox)}
+\textit{Must first be in focus, then \dots}\\
+\entry{25mm}{space}{toggle play}\\
+\entry{25mm}{$\uparrow$}{volume up / down}\\
+\entry{25mm}{\ctlkey-$\uparrow$}{mute / unmute}\\
+\entry{25mm}{$\leftarrow$}{seek back / forward (s)}\\
+\entry{25mm}{\ctlkey-$\leftarrow$}{seek back / forward (\%)}\\
+\entry{25mm}{\ctlkey-home}{beginning / end}\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Terminal Hotkeys}
 
 \entry{25mm}{\cmdkey-l}{c\ul{l}ear screen (bash)}\\
-\entry{25mm}{}{}\\
-\entry{25mm}{}{}\\
-\entry{25mm}{}{}\\
+\entry{25mm}{\shiftkey-\ctlkey-t}{new \ul{t}ab}\\
+\entry{25mm}{\shiftkey-\ctlkey-n}{\ul{n}ew window}\\
+\entry{25mm}{\shiftkey-\ctlkey-w}{close tab}\\
+\entry{25mm}{\shiftkey-\ctlkey-q}{close window}\\
+\entry{25mm}{\shiftkey-\ctlkey-$\uparrow$}{scroll up (line)}\\
+\entry{25mm}{\shiftkey-pageup}{scroll up (page)}\\
+\entry{25mm}{\shiftkey-home}{scroll to top}\\
+\entry{25mm}{\optkey-b}{\ul{b}ack one word}\\
+\entry{25mm}{\ctlkey-a}{beginning of line}\\
 
