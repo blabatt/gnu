@@ -1,0 +1,13 @@
+\section{PDF Manipulation}
+\entryh{29mm}{pdfunite a b x}{combine pdf $(a,b) \rightarrow x$}{https://stackoverflow.com/questions/2507766/merge-convert-multiple-pdf-files-into-one-pdf}
+\entryh{29mm}{pdftk}{advanced pdf manip.}{https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/}
+\entry{35mm}{pdftk A=a.pdf B=b.pdf}{combine 2 pdfs} \\
+\code{\phantom{xxxx}cat A1-5 B2-3 output combined.pdf}
+\entry{35mm}{pdftk a.pdf burst}{split by page} \\
+\entryh{30mm}{exiftool}{metadata manip.}{https://www.exiftool.org/} \\ 
+\entry{35mm}{exiftool file.pdf}{show metadata} \\
+\entry{40mm}{exiftool -Name -Date a.pdf}{specific fields} \\
+\entry{35mm}{exiftool -r -ext jpg}{\ul{r}ecurse} \\
+\entry{35mm}{exiftool -ext *.jpg}{extension filtering} \\
+\entry{35mm}{exiftool}{time-shifting}\\
+\code{\phantom{xxxx}``-DateTimeOriginal+=0:0:0 1:0:0'' a.jpg} \\

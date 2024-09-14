@@ -1,0 +1,59 @@
+layout cwd="." {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="general" cwd="/home/blabattiii/Projects" {
+		pane split_direction="vertical" {
+			pane name="Projects" size="65%" 
+			pane name="fisl" cwd="."
+		}
+    }
+    tab name="cheat" cwd="/home/blabattiii/Projects/cheatsheets" {
+		pane split_direction="vertical" {
+			pane name="edit" size="70%"
+			pane name="load"
+		}
+    }
+    tab name="gnuutils" cwd="." focus=true {
+		floating_panes {
+			pane name="terminal" {
+				x "25%"
+				y "25%"
+				width "50%"
+				height "50%"
+			}
+		}
+		pane split_direction="vertical" {
+			pane name="edit" size="60%" focus=true {
+			    command "nvim"
+				args "bash.tex" "calls.tex" "compression.tex" "connectivity.tex" "dataprocessing.tex" "disk.tex" "filesystem.tex" "gnome.tex" "misc.tex" "network.tex" "package.tex" "print.tex" "processes.tex" "security.tex" "shell.tex" "system.tex" "terminals.tex"
+
+
+			}
+			pane split_direction="horizontal" {
+				pane stacked=true size="60%" {
+					pane name="main" {
+						command "nvim"
+						args "main.tex"
+					}
+					pane name="zellij" {
+						command "nvim"
+						args "layout.kdl"
+					}
+					pane name="make" {
+						command "nvim"
+						args "Makefile"
+					}
+				}
+				pane name="commit"
+			}
+		}
+    }
+}
+
